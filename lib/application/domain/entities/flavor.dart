@@ -1,3 +1,1 @@
-class Flavor {
-  
-}
+enum Flavor { dev, stag, prod }

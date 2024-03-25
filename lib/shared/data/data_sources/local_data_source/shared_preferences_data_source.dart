@@ -1,5 +1,6 @@
 import '../../../dependencies/dependencies.dart';
 
+@singleton
 class SharedPreferencesDataSource {
   late SharedPreferences _prefs;
 
