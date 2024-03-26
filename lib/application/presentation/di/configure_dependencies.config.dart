@@ -11,7 +11,7 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import '../../shared/data/data_sources/local_data_source/shared_preferences_data_source.dart'
+import '../../../shared/data/data_sources/local_data_source/shared_preferences_data_source.dart'
     as _i3;
 
 extension GetItInjectableX on _i1.GetIt {
@@ -25,8 +25,10 @@ extension GetItInjectableX on _i1.GetIt {
       environment,
       environmentFilter,
     );
-    gh.singleton<_i3.SharedPreferencesDataSource>(
-        () => _i3.SharedPreferencesDataSource());
+    gh.singletonAsync<_i3.SharedPreferencesDataSource>(() {
+      final i = _i3.SharedPreferencesDataSource();
+      return i.initialize().then((_) => i);
+    });
     return this;
   }
 }

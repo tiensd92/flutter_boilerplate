@@ -1,4 +1,4 @@
-import '../dependencies/dependencies.dart';
+import '../../dependencies/dependencies.dart';
 
 import 'configure_dependencies.config.dart';
 

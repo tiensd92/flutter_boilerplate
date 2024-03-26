@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   # Storage
   shared_preferences: ^2.2.2
@@ -18,12 +20,15 @@ dependencies:
   flutter_svg: ^2.0.10+1
   
   # Localization
-  intl: ^0.19.0
+  intl: ^0.18.1
   intl_utils: ^2.8.7
 
   # DI
   injectable: ^2.4.0
   get_it: ^7.6.7
+
+  # Routing
+  auto_route: ^8.0.0
 
 dev_dependencies:
   flutter_test:
@@ -31,8 +36,15 @@ dev_dependencies:
 
   build_runner:
   flutter_lints: ^3.0.0
+
+  # Assets
   flutter_gen_runner:
+
+  # DI
   injectable_generator:
+
+  # Routing
+  auto_route_generator:
 
 dependency_overrides:
   meta: 1.11.0
